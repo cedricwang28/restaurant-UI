@@ -1,0 +1,368 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+
+	<!-- meta tag to make sure content is same width as device and not scalabl -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Project 02 Framework</title>
+
+	<!-- link to css files -->
+	<link rel="stylesheet" href="css/mainmy.css">
+	<link rel="stylesheet" href="js/bootstrap.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	<!-- link to js files -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/TweenMax.js"></script>
+</head>
+
+<body>
+	<!-- MENU -->
+	<main id="menu">
+		<header>FAMILY OF EATERIES</header>
+		<div id="backToLanding" class="menuBtn"><img src="img/landing_icon.svg" alt="Home" /><span>Select a New Restaurant</span></div>
+		<div id="contact" class="menuBtn"><img class="contactIcon" src="img/contact_icon.svg" alt="Contact" /><span>Contact Family of Eateries</span></div>
+		<div id="about" class="menuBtn"><img src="img/about_icon.svg" alt="About" /><span>About Family of Eateries</span></div>
+	</main>
+
+	<!-- SPLASH SCREEN -->
+	<main id="splash">
+		<header>FAMILY OF EATERIES</header>
+		<img src="img/chefwang.svg" alt="Family of Eateries" />
+		<footer></footer>
+	</main>
+	<!-- LANDNG SCREEN -->
+	<main id="landing">
+		<div class="brand landingLogos" id="logo1" style="background-color: #63bc46">
+			<img src="img/logo1.svg" alt="ceviche" />
+		</div>
+		<div class="brand landingLogos" id="logo2" style="background-color: #a36209">
+			<img src="img/logo2.svg" alt="bistro" />
+		</div>
+		<div class="brand landingLogos" id="logo3">
+			<img src="img/logo3.svg" alt="crispy" />
+		</div>
+	</main>
+
+	<!-- RESTAURANT 1 -->
+	<main id="rest1" class="rest">
+		<!-- header -->
+		<header style="background-color: #63bc46">
+			<img class="hamburger" data-click-state="1" src="img/hamburger.gif" alt="Menu" />
+			<img class="headerImage" src="img/logo1.svg">
+		</header>
+		<!-- home -->
+		<section class="home">
+			<img src="img/ceviche.jpeg" class="reveal">
+			<h2 class="reveal">Ceviche</h2>
+			<h3 class="reveal">Fine Dining</h3>
+			<img src="img/ceviche_rating.png" id="rating" style="float: left" class="reveal">
+			<div class="likes reveal">
+				<i class="far fa-thumbs-up" style="float: right"></i>
+				<p style="float: right">128 Likes</p>
+			</div>
+			<div class="description reveal">
+				<p>What a beautiful and cute hidden gem in Oshawa! The ceviche was fresh and delicious. I tried out the mango flavor, medium spiced. My friend and I also had the chicken tacos and we were served 4 different sauces to try out with them. The latté I had was nice too. Overall a little taste of the Caribbean, where you will feel transported away in the setting. Will definitely go back to try out some other menu items! Everything on it looks delicious.</p>
+			</div>
+			<div class="greyBorder reveal"><i class="fas fa-store-alt"></i>&#160; Opening Hours: 10:00 am -- 22:00 pm</div>
+			<div class="greyBorder reveal">&#160;<i class="fas fa-map-pin"></i>&#160;&#160;&#160; Address: 38 Aquatic Ballet Path, Oshawa</div>
+
+
+
+		</section>
+		<!-- specials -->
+		<section class="specials">
+			<div class="specialImage reveal">
+				<img src="img/cevicheSpecial1.jpg">
+				<div class="imageFloat">Sirloin Steak with Asparagus</div>
+			</div>
+			<div class="specialImage reveal">
+				<img src="img/cevicheSpecial2.jpg">
+				<div class="imageFloat">Garlic Rosemary Prawns</div>
+			</div>
+			<div class="specialImage reveal">
+				<img src="img/cevicheSpecial3.jpg">
+				<div class="imageFloat">White Fish Fillet</div>
+			</div>
+			<div class="specialImage reveal">
+				<img src="img/cevicheSpecial4.jpg">
+				<div class="imageFloat">Arugula and Fennel Salad</div>
+			</div>
+		</section>
+		<!-- reservations -->
+		<section class="reservations">
+			
+			<div class="sectionContainer">
+				<h2 class="reveal" style="text-align: center;margin: 15px auto">Fill in the Form below</h2>
+				
+				<form>
+					<div class="form-group reveal">
+						<label for="exampleFormControlInput1">Your Name</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1">
+					</div>
+					<div class="form-group reveal">
+						<label for="exampleFormControlInput1">Your Address</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1">
+					</div>
+					<div class="form-group reveal">
+						<label for="exampleFormControlSelect1">Delivery Time</label>
+						<select class="form-control" id="exampleFormControlSelect1">
+							<option>12:00</option>
+							<option>13:00</option>
+							<option>14:00</option>
+							<option>15:00</option>
+							<option>16:00</option>
+							<option>18:00</option>
+							<option>20:00</option>
+						</select>
+					</div>
+					
+					<div class="form-group reveal">
+						<label for="exampleFormControlTextarea1">Your Order</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					</div>
+					 <button class="btn btn-primary reveal reserve" type="submit" style="background-color:#63bc46;border: 0px">Submit form</button>
+				</form>
+				
+				
+			</div>
+		</section>
+		<!-- footer -->
+		<footer style="background-color: #63bc46">
+			<div class="homeIcon" data-section=".home">
+				<img src="img/home_icon.svg" alt="Home" />
+				<p>Home</p>
+			</div>
+			<div class="specialsIcon" data-section=".specials">
+				<img src="img/specials_icon.svg" alt="Specials" />
+				<p>Specials</p>
+			</div>
+			<div class="reservationsIcon" data-section=".reservations">
+				<img src="img/reservations_icon.svg" alt="Reservations" />
+				<p>Reservations</p>
+			</div>
+		</footer>
+	</main>
+	<!-- RESTAURANT 2 -->
+	<main id="rest2" class="rest">
+		<!-- header -->
+		<header style="background-color: #a36209">
+			<img class="hamburger" data-click-state="1" src="img/hamburger.gif" alt="Menu" />
+			<img class="headerImage" src="img/logo2.svg" style="width: 45%; margin-left: 20px">
+		</header>
+		<!-- home -->
+		<section class="home">
+			<img src="img/birch.jpg" class="reveal">
+			<h2 class="reveal">Birch Bistro</h2>
+			<h3 class="reveal">Casual Dining</h3>
+			<img src="img/ceviche_rating.png" id="rating" style="float: left" class="reveal">
+			<div class="likes reveal">
+				<i class="far fa-thumbs-up" style="float: right;color: #a36209"></i>
+				<p style="float: right">102 Likes</p>
+			</div>
+			<div class="description reveal">
+				<p>What a beautiful and cute hidden gem in Oshawa! The ceviche was fresh and delicious. I tried out the mango flavor, medium spiced. My friend and I also had the chicken tacos and we were served 4 different sauces to try out with them. The latté I had was nice too. Overall a little taste of the Caribbean, where you will feel transported away in the setting. Will definitely go back to try out some other menu items! Everything on it looks delicious.</p>
+			</div>
+			<div class="greyBorder reveal"><i class="fas fa-store-alt"></i>&#160; Opening Hours: 10:00 am -- 22:00 pm</div>
+			<div class="greyBorder reveal">&#160;<i class="fas fa-map-pin"></i>&#160;&#160;&#160; Address: 38 Aquatic Ballet Path, Oshawa</div>
+
+
+
+		</section>
+		<!-- specials -->
+		<section class="specials">
+			<div class="specialImage reveal">
+				<img src="img/birchspecial1.jpg">
+				<div class="imageFloat">Angus Beef Burger with Fries</div>
+			</div>
+			<div class="specialImage reveal">
+				<img src="img/birchspecial2.jpg">
+				<div class="imageFloat">Calamari with Vegetable</div>
+			</div>
+			<div class="specialImage reveal">
+				<img src="img/birchspecial3.jpg">
+				<div class="imageFloat">Super-thin Naples pizza</div>
+			</div>
+			<div class="specialImage reveal">
+				<img src="img/birchspecial4.jpg">
+				<div class="imageFloat">Mixed Seafood Spaghetti</div>
+			</div>
+		</section>
+		<!-- reservations -->
+		<section class="reservations">
+			
+			<div class="sectionContainer">
+				<h2 class="reveal" style="text-align: center;margin: 15px auto">Fill in the Form below</h2>
+				
+				<form>
+					<div class="form-group reveal">
+						<label for="exampleFormControlInput1">Your Name</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1">
+					</div>
+					<div class="form-group reveal">
+						<label for="exampleFormControlInput1">Your Address</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1">
+					</div>
+					<div class="form-group reveal">
+						<label for="exampleFormControlSelect1">Delivery Time</label>
+						<select class="form-control" id="exampleFormControlSelect1">
+							<option>12:00</option>
+							<option>13:00</option>
+							<option>14:00</option>
+							<option>15:00</option>
+							<option>16:00</option>
+							<option>18:00</option>
+							<option>20:00</option>
+						</select>
+					</div>
+					
+					<div class="form-group reveal">
+						<label for="exampleFormControlTextarea1">Your Order</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					</div>
+					 <button class="btn btn-primary reveal reserve" type="submit" style="background-color:#a36209;border: 0px">Submit form</button>
+				</form>
+				
+				
+			</div>
+		</section>
+		<!-- footer -->
+		<footer style="background-color: #a36209">
+			<div class="homeIcon" data-section=".home">
+				<img src="img/home_icon.svg" alt="Home" />
+				<p>Home</p>
+			</div>
+			<div class="specialsIcon" data-section=".specials">
+				<img src="img/specials_icon.svg" alt="Specials" />
+				<p>Specials</p>
+			</div>
+			<div class="reservationsIcon" data-section=".reservations">
+				<img src="img/reservations_icon.svg" alt="Reservations" />
+				<p>Reservations</p>
+			</div>
+		</footer>
+	</main>
+	<!-- RESTAURANT 3 -->
+	<main id="rest3" class="rest">
+		<!-- header -->
+		<header style="background-color: #d60606">
+			<img class="hamburger" data-click-state="1" src="img/hamburger.gif" alt="Menu" />
+			<img class="headerImage" src="img/logo3.svg" style="width: 45%;margin-left: 15px">
+		</header>
+		<!-- home -->
+		<section class="home">
+			<img src="img/crispy.jpg"  class="reveal">
+			<h2 class="reveal">Crispy's</h2>
+			<h3 class="reveal">Fast Food</h3>
+			<img src="img/ceviche_rating.png" id="rating" style="float: left"  class="reveal">
+			<div class="likes reveal">
+				<i class="far fa-thumbs-up" style="float: right; color: #d60606"></i>
+				<p style="float: right">128 Likes</p>
+			</div>
+			<div class="description reveal">
+				<p>What a beautiful and cute hidden gem in Oshawa! The ceviche was fresh and delicious. I tried out the mango flavor, medium spiced. My friend and I also had the chicken tacos and we were served 4 different sauces to try out with them. The latté I had was nice too. Overall a little taste of the Caribbean, where you will feel transported away in the setting. Will definitely go back to try out some other menu items! Everything on it looks delicious.</p>
+			</div>
+			<div class="greyBorder reveal"><i class="fas fa-store-alt"></i>&#160; Opening Hours: 10:00 am -- 22:00 pm</div>
+			<div class="greyBorder reveal">&#160;<i class="fas fa-map-pin"></i>&#160;&#160;&#160; Address: 38 Aquatic Ballet Path, Oshawa</div>
+
+
+
+		</section>
+		<!-- specials -->
+		<section class="specials">
+			<div class="specialImage reveal">
+				<img src="img/crispyspecial1.jpg">
+				<div class="imageFloat">Grilled Chicken Burger</div>
+			</div>
+			<div class="specialImage reveal">
+				<img src="img/crispyspecial2.jpg">
+				<div class="imageFloat">Grilled Korean Bulgogi Burgers</div>
+			</div>
+			<div class="specialImage reveal">
+				<img src="img/crispyspecial3.jpg">
+				<div class="imageFloat">Deep Fried Chicken Thighs</div>
+			</div>
+			<div class="specialImage reveal">
+				<img src="img/crispyspecial4.jpg">
+				<div class="imageFloat">Crispy Onion Rings</div>
+			</div>
+		</section>
+		<!-- reservations -->
+		<section class="reservations">
+			
+			<div class="sectionContainer">
+				<h2 class="reveal" style="text-align: center;margin: 15px auto">Fill in the Form below</h2>
+				
+				<form>
+					<div class="form-group reveal">
+						<label for="exampleFormControlInput1">Your Name</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1">
+					</div>
+					<div class="form-group reveal">
+						<label for="exampleFormControlInput1">Your Address</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1">
+					</div>
+					<div class="form-group reveal">
+						<label for="exampleFormControlSelect1">Delivery Time</label>
+						<select class="form-control" id="exampleFormControlSelect1">
+							<option>12:00</option>
+							<option>13:00</option>
+							<option>14:00</option>
+							<option>15:00</option>
+							<option>16:00</option>
+							<option>18:00</option>
+							<option>20:00</option>
+						</select>
+					</div>
+					
+					<div class="form-group reveal">
+						<label for="exampleFormControlTextarea1">Your Order</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					</div>
+					 <button class="btn btn-primary reveal reserve" type="submit" style="background-color:#d60606;border: 0px">Submit form</button>
+				</form>
+				
+				
+			</div>
+		</section>
+		<!-- footer -->
+		<footer style="background-color: #d60606">
+			<div class="homeIcon" data-section=".home">
+				<img src="img/home_icon.svg" alt="Home" />
+				<p>Home</p>
+			</div>
+			<div class="specialsIcon" data-section=".specials">
+				<img src="img/specials_icon.svg" alt="Specials" />
+				<p>Specials</p>
+			</div>
+			<div class="reservationsIcon" data-section=".reservations">
+				<img src="img/reservations_icon.svg" alt="Reservations" />
+				<p>Reservations</p>
+			</div>
+		</footer>
+	</main>
+
+	<script>
+		// hide all main elements above the selected index in the ()
+		// comment out when running animtion scripts
+		// 0=menu, 1=splash, 2=landing, 3=rest 1, 4=rest 2, 5=rest 3
+//		$("main:gt(5)").hide();
+//		$("main:lt(5)").hide();
+//
+//		//        
+//		//        // hide all section elements (in the selected restaurant/main screen)
+//		//        // above the selected index in the ()
+//		//        // comment out when running animtion scripts
+//		//        // 0=home, 1=specials, 2=reservations
+//		$("#rest3 section:gt(2)").hide();
+
+	</script>
+
+	<!-- link to main js file -->
+	    <script src="js/mydemo.js"></script>
+</body>
+
+</html>
