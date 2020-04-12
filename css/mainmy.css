@@ -111,7 +111,7 @@ footer {
 /* LANDING SCREEN ///////////////////////////////////////// */
 .brand{
 	width: 95%;
-	height: 32%;
+	height: 29.5%;
 	background-color: red;
 	margin: 3px;
 	margin: 6px auto;
@@ -296,7 +296,7 @@ footer img {
 }
 .imageFloat{
 	position: absolute;
-	bottom: 20px;
+	bottom: 30px;
 	left: 0;
 	background-color: rgba(255,255,255,0.7);
 	color: black;
@@ -359,3 +359,70 @@ span{
 
 
 
+.select{
+	width: 100%;
+	height: 8%;
+	background-color: beige;
+	text-align: center;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 25px;
+	box-sizing: border-box;
+	padding-top: 5px;
+}
+
+.imageFloat ul{
+	list-style: none;
+}
+
+
+
+
+
+
+
+
+.contactform {
+    /* font-family: AppFont; */
+    text-align: center;
+    font-weight: bolder;
+    
+}
+.contactbox {
+    background:#fff;
+    padding:5px;
+    border:1px solid #000;
+    width:95%;
+    margin:10px;
+    height:auto;
+    opacity:0;
+}
+
+#menu input, #menu select, #menu textarea {
+    border-color: #00274d;
+    font-family: sans-serif;
+}
+
+#menu input:focus, #menu select:focus, #menu textarea:focus {
+    outline: none;
+    background: rgba(153, 0, 51, 0.05);
+}
+
+#menu p {
+    margin:2px;
+}
+
+#menu .submit {
+    border-color: #FFF !important;
+    color: #FFF;
+    background: #c97d2a;
+}
+
+#menu .submit span {
+    color:#c97d2a;
+}
+
+#menu .submit:hover {
+    border-color: #c97d2a !important;
+    color: #c97d2a;
+    background: #FFF;
+}

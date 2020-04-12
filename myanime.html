@@ -26,6 +26,34 @@
 		<div id="backToLanding" class="menuBtn"><img src="img/landing_icon.svg" alt="Home" /><span>Select a New Restaurant</span></div>
 		<div id="contact" class="menuBtn"><img class="contactIcon" src="img/contact_icon.svg" alt="Contact" /><span>Contact Family of Eateries</span></div>
 		<div id="about" class="menuBtn"><img src="img/about_icon.svg" alt="About" /><span>About Family of Eateries</span></div>
+
+		<div class="contactbox">
+                <p class="contactform reveal"> CONTACT FORM </p>
+                <p class="reveal name">
+                    <label for="name">Name<span>*</span></label>
+                    <input type="text" name="name" placeholder="First and Last Name">
+                </p>
+                
+                <p class="reveal email">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" placeholder="ex: myname@example.com">
+                </p>
+                
+                <p class="reveal subject">
+                    <label for="nasubjectme">Subject<span>*</span></label>
+                    <input type="text" name="subject" placeholder="Email Subject">
+                </p>
+                
+                <p class="reveal message">
+                    <label for="message">Message<span>*</span></label>
+                    <textarea name="message" rows="4"></textarea>
+                </p>
+                
+                <p class="reveal">
+                    <input type="submit" class="submit" name="Submit" />
+                </p>
+            
+            </div>
 	</main>
 
 	<!-- SPLASH SCREEN -->
@@ -36,6 +64,7 @@
 	</main>
 	<!-- LANDNG SCREEN -->
 	<main id="landing">
+		<div class="select">Select a Restaurant</div>
 		<div class="brand landingLogos" id="logo1" style="background-color: #63bc46">
 			<img src="img/logo1.svg" alt="ceviche" />
 		</div>
@@ -77,19 +106,31 @@
 		<section class="specials">
 			<div class="specialImage reveal">
 				<img src="img/cevicheSpecial1.jpg">
-				<div class="imageFloat">Sirloin Steak with Asparagus</div>
+				<div class="imageFloat">
+					<h5>Sirloin Steak with Asparagus  $19</h5>
+					<p>Top class steak with fresh veg</p>
+				</div>
 			</div>
 			<div class="specialImage reveal">
 				<img src="img/cevicheSpecial2.jpg">
-				<div class="imageFloat">Garlic Rosemary Prawns</div>
+				<div class="imageFloat">
+						<h5>Garlic Rosemary Prawns $15</h5>
+						<p>New Zealand prawns with garlic</p>
+				</div>
 			</div>
 			<div class="specialImage reveal">
 				<img src="img/cevicheSpecial3.jpg">
-				<div class="imageFloat">White Fish Fillet</div>
+				<div class="imageFloat">
+						<h5>White Fish Fillet $29</h5>
+						<p>White fish fillet sashimi</p>
+				</div>
 			</div>
 			<div class="specialImage reveal">
 				<img src="img/cevicheSpecial4.jpg">
-				<div class="imageFloat">Arugula and Fennel Salad</div>
+				<div class="imageFloat">
+						<h5>Arugula and Fennel Salad $25</h5>
+						<p>Fresh veggies and chicken breast</p>
+				</div>
 			</div>
 		</section>
 		<!-- reservations -->
@@ -107,8 +148,12 @@
 						<label for="exampleFormControlInput1">Your Address</label>
 						<input type="email" class="form-control" id="exampleFormControlInput1">
 					</div>
-					<div class="form-group reveal">
-						<label for="exampleFormControlSelect1">Delivery Time</label>
+					<div class="reveal date">
+                        <label for="date">Date</label>
+                        <input type="date" name="date" placeholder="yyyy-mm-dd" class="form-control" />
+                    </div>
+					<div class="form-group reveal" style="margin-top:10px;">
+						<label for="exampleFormControlSelect1">Time</label>
 						<select class="form-control" id="exampleFormControlSelect1">
 							<option>12:00</option>
 							<option>13:00</option>
@@ -176,19 +221,43 @@
 		<section class="specials">
 			<div class="specialImage reveal">
 				<img src="img/birchspecial1.jpg">
-				<div class="imageFloat">Angus Beef Burger with Fries</div>
+				<div class="imageFloat">
+						<h5>Angus Beef Burger with Fries $25</h5>
+						<ul>
+							<li>Angus Beef</li>
+							<li>Fries</li>
+						</ul>
+				</div>
 			</div>
 			<div class="specialImage reveal">
 				<img src="img/birchspecial2.jpg">
-				<div class="imageFloat">Calamari with Vegetable</div>
+				<div class="imageFloat">
+						<h5>Calamari with Vegetable $13</h5>
+						<ul>
+							<li>Calamari</li>
+							<li>Fresh Vegi</li>
+						</ul>
+				</div>
 			</div>
 			<div class="specialImage reveal">
 				<img src="img/birchspecial3.jpg">
-				<div class="imageFloat">Super-thin Naples pizza</div>
+				<div class="imageFloat">
+						<h5>Super-thin Naples pizza $16</h5>
+						<ul>
+							<li>Italian Pizza</li>
+							<li>Spaghetti</li>
+						</ul>
+				</div>
 			</div>
 			<div class="specialImage reveal">
 				<img src="img/birchspecial4.jpg">
-				<div class="imageFloat">Mixed Seafood Spaghetti</div>
+				<div class="imageFloat">
+						<h5>Mixed Seafood Spaghetti $16</h5>
+						<ul>
+							<li>Mussel and Crab</li>
+							<li>Speghetti</li>
+						</ul>
+				</div>
 			</div>
 		</section>
 		<!-- reservations -->
@@ -206,8 +275,12 @@
 						<label for="exampleFormControlInput1">Your Address</label>
 						<input type="email" class="form-control" id="exampleFormControlInput1">
 					</div>
-					<div class="form-group reveal">
-						<label for="exampleFormControlSelect1">Delivery Time</label>
+					<div class="reveal date">
+                        <label for="date">Date</label>
+                        <input type="date" name="date" placeholder="yyyy-mm-dd" class="form-control" class="form-control"/>
+                    </div>
+					<div class="form-group reveal" style="margin-top:10px;">
+						<label for="exampleFormControlSelect1">Time</label>
 						<select class="form-control" id="exampleFormControlSelect1">
 							<option>12:00</option>
 							<option>13:00</option>
@@ -275,19 +348,31 @@
 		<section class="specials">
 			<div class="specialImage reveal">
 				<img src="img/crispyspecial1.jpg">
-				<div class="imageFloat">Grilled Chicken Burger</div>
+				<div class="imageFloat">
+					<h5>Grilled Chicken Burger $26</h5>
+					<p>The chicken in this sandwich gets dredged once in buttermilk and</p>
+				</div>
 			</div>
 			<div class="specialImage reveal">
 				<img src="img/crispyspecial2.jpg">
-				<div class="imageFloat">Grilled Korean Bulgogi Burgers</div>
+				<div class="imageFloat">
+						<h5>Grilled Korean Bulgogi Burgers $16</h5>
+						<p>this pork belly is with perfect texture.</p>
+				</div>
 			</div>
 			<div class="specialImage reveal">
 				<img src="img/crispyspecial3.jpg">
-				<div class="imageFloat">Deep Fried Chicken Thighs</div>
+				<div class="imageFloat">
+						<h5>Deep Fried Chicken Thighs $18</h5>
+						<p>The chicken in this sandwich gets dredged once in buttermilk and</p>
+				</div>
 			</div>
 			<div class="specialImage reveal">
 				<img src="img/crispyspecial4.jpg">
-				<div class="imageFloat">Crispy Onion Rings</div>
+				<div class="imageFloat">Crispy Onion Rings
+						<h5>Crispy Onion Rings $12</h5>
+						<p>The chicken in this sandwich gets dredged once in buttermilk and</p>
+				</div>
 			</div>
 		</section>
 		<!-- reservations -->
@@ -305,8 +390,12 @@
 						<label for="exampleFormControlInput1">Your Address</label>
 						<input type="email" class="form-control" id="exampleFormControlInput1">
 					</div>
-					<div class="form-group reveal">
-						<label for="exampleFormControlSelect1">Delivery Time</label>
+					<div class="reveal date">
+                        <label for="date">Date</label>
+                        <input type="date" name="date" placeholder="yyyy-mm-dd" class="form-control" class="form-control"/>
+                    </div>
+					<div class="form-group reveal" style="margin-top:10px;">
+						<label for="exampleFormControlSelect1">Time</label>
 						<select class="form-control" id="exampleFormControlSelect1">
 							<option>12:00</option>
 							<option>13:00</option>

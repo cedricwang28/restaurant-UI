@@ -121,7 +121,7 @@ function loadRest(restID, highlightColour) {
             delay: 1.25 + i * 0.15,
             opacity: 0,
             y: 100,
-            ease: Elastic.easeOut
+            ease: Sine.easeOut
         });
 
     });
@@ -237,7 +237,7 @@ $('.hamburger').click(function(){
 			x:0,
 			ease:Sine.easeIn,
 			onComplete:function(){
-				TweenMax.to(".rest",0.5,{
+				TweenMax.to(".rest",0.01,{
 					opacity:0,
 					ease:Ease.easeIn,
 					onComplete:loadLanding
@@ -255,3 +255,6 @@ $("#contact").click(function(){
 $("#about").click(function(){
 	alert("click about");
 });
+
+
+
